@@ -35,4 +35,29 @@ else:
     print("Grade E")
 
 
+#area of rectangle triangle square circle
+a=int(input())
+b=int(input())
+area_of_rectangle=a*b
+print("Area of rectangle:",area_of_rectangle)
+b=int(input())
+h=int(input())
+area_of_triangle=1/2*b*h
+print("Area of triangle:",area_of_triangle)
+r=int(input())
+area_of_circle=3.14*r*r
+print("Area of circle:",area_of_circle)
+a=int(input())
+area_of_square=a*a
+print("Area of square:",area_of_square)
+
+#fibonacci series
+n=int(input("Enter the Number:"))
+a,b=0,1
+print(a, b, end=" ")
+for i in range(2,n):
+    a,b=b,a+b
+    print(b,end=" ")
+
+
 
