@@ -1,4 +1,4 @@
-#Temperature Conversion
+"""#Temperature Conversion
 print("Enter 'c' to covert from Celsius to Fahrenheit")
 print("Enter 'f' to covert from Fahrenheit to Celsius")
 choice=input("Enter your choice:")
@@ -32,10 +32,10 @@ elif per>=60:
 elif per>=40:
     print("Grade D")
 else:
-    print("Grade E")
+    print("Grade E")"""
 
 
-#area of rectangle triangle square circle
+"""#area of rectangle triangle square circle
 a=int(input())
 b=int(input())
 area_of_rectangle=a*b
@@ -57,7 +57,37 @@ a,b=0,1
 print(a, b, end=" ")
 for i in range(2,n):
     a,b=b,a+b
-    print(b,end=" ")
+    print(b,end=" ")"""
+
+"""#factorial using recursion
+def factorial(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
+num=int(input('enter the number:'))
+print(f"The factorial is {factorial(num)}")"""
+
+#create a list of array from that count how many odd and even numbers are there
+def count_odd_even(numbers):
+    odd_count = 0
+    even_count = 0
+    for num in numbers:
+        if num % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+    return odd_count, even_count
+n = int(input("Enter the number of elements in the list: "))
+numbers = []
+for i in range(n):
+    num = int(input(f"Enter number {i+1}: "))
+    numbers.append(num)
+odd_count, even_count = count_odd_even(numbers)
+print(f"The list of numbers is: {numbers}")
+print(f"Number of odd numbers: {odd_count}")
+print(f"Number of even numbers: {even_count}")
+
 
 
 
